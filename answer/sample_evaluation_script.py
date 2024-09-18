@@ -9,7 +9,10 @@ import zipfile
 # zip_ref.close()
 
 truth_path = "b"  # change truth_path = 'b' for verification
-file_name = ["Task_1/dw.csv", "Task_1/db.csv"]
+file_name = [
+    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\Task_1\dw.csv",
+    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\Task_1\db.csv",
+]
 true_file = ["true-dw.csv", "true-db.csv"]
 threshold = 0.05
 
@@ -51,12 +54,20 @@ def compare(sub, true, threshold=0):
 
 
 true_grads = list()
-for f in true_file:
-    true_grads.append(read_file(os.path.join(truth_path, f)))
+true_grads.append(
+    read_file(
+        "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\true-dw.csv"
+    )
+)
+true_grads.append(
+    read_file(
+        "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\true-db.csv"
+    )
+)
 
 score = list()
 for i, fn in enumerate(file_name):
-    grads = read_file(os.path.join(fn))
+    grads = read_file(fn)
     s = compare(grads, true_grads[i], threshold)
     score += s
 print(np.sum(score))
