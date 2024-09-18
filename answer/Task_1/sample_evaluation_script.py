@@ -10,16 +10,16 @@ import zipfile
 
 truth_path = ""  # change truth_path = 'b' for verification
 file_name = [
-    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\dwe.csv",
-    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\db.csv",
+    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\Task_1\dw.csv",
+    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\Task_1\db.csv",
 ]
 # file_name = [
 #     "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\true-dw.csv",
 #     "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\true-db.csv",
 # ]
 true_file = [
-    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\true-dw.csv",
-    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\\b\\true-db.csv",
+    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\Task_1\\true-dw.csv",
+    "E:\Semester 05\Data Minning\Assignment_1\Assignment_1\\answer\Task_1\\true-db.csv",
 ]
 threshold = 0.05
 
